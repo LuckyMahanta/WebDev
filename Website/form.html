@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Registration Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="form.css">
+    </head>
+
+    <body>
+        <div class="nav-bar">
+            <div>
+                <img src="https://krs.kiit.ac.in/assets/KRS.b5e08628.png" alt="logo" height="40px">
+            </div>
+            <div class="List">
+                <a class="links" href="index.html"> Home</a>
+                <a class="links" href="#index.html#about"> About Us</a>
+                <a class="links" href="#footer"> Contact Us</a>
+            </div>
+            <div class="button">
+                <a class="button1" href="login.html"> Login</a>
+                <a class="button2" id="RegisterButton" href="form.html"> Register</a>
+            </div>
+        </div>
+
+        <div class="form">
+            <div class="form-box">
+                <h1><u>REGISTRATION FORM</u></h1>
+                <br>
+                <form id="myform" onsubmit="return validateForm()">
+                    <div class="user">
+                        <label for="name"><b>Name:</b></label>
+                        <input class="input" type="text" name="name" placeholder="Enter name here" required>
+                        <div class="error" style="color: red" id="nameErr"></div>
+                    </div>
+
+                    <div class="user">
+                        <label for="number"><b>Phone:</b></label>
+                        <input class="input" type="text" minlength="10" maxlength="12" name="number"
+                            placeholder="Enter phone number here" required>
+                        <div class="error" style="color: red" id="mobileErr"></div>
+                    </div>
+
+                    <div class="user">
+                        <label><b>Email:</b></label>
+                        <input class="input" type="text" name="email" placeholder="Enter your email here" required>
+                        <div class="error" style="color: red" id="emailErr"></div>
+                    </div>
+
+                    <div class="user">
+                        <label><b>Gender:</b></label>
+                        <input class="input" type="radio" name="gender" value="male" required> Male
+                        <input class="input" type="radio" name="gender" value="female" required> Female
+                        <div class="error" style="color: red" id="genderErr"></div>
+                    </div>
+
+                    <div class="user">
+                        <label><b>Qualification:</b></label>
+                        <input class="input" type="radio" name="qualification" value="student" required> Student
+                        <input class="input" type="radio" name="qualification" value="teacher" required> Teacher
+                        <div class="error" style="color: red" id="qualificationErr"></div>
+                    </div>
+
+                    <div class="user">
+                        <label><b>Course:</b></label>
+                        <input class="input" type="radio" name="course" value="Web development" required> Web
+                        Development
+                        <input class="input" type="radio" name="course" value="App Development" required> App
+                        Development
+                        <div class="error" style="color: red" id="courseErr"></div>
+
+                    </div>
+
+                    <div class="user">
+                        <label><b>Country:</b></label>
+                        <select name="country" required>
+                            <option value="">Select</option>
+                            <option value="Australia">Australia</option>
+                            <option value="India">India</option>
+                            <option vlaue="United States">United States</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                        </select>
+                        <div class="error" style="color: red" id="countryErr"></div>
+                    </div>
+
+                    <div class="conditions">
+                        <b>Conditions:</b>
+                        <br>
+                        <ol> 
+                            <li>
+                                Each user shall only register once.
+                            </li>
+                            <li>
+                                It is the User's responsibility to make sure that he/she has sufficient access to Internet to participate to the activites at the desired extend.
+                            </li>
+                        </ol>
+                        <div class="error" style="color: red" id="conditionsErr"></div>
+                    </div>
+
+                    <div class="checkbox">
+                        <input class="input" type="checkbox" name="checkbox_conditions" value="accepted form" required> I have read and agreed to all conditions
+                    </div>
+
+                    <div class="comment">
+                        <b>Comments:</b>
+                        <textarea rows="4" cols="50" placeholder="Enter your feedback here"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" id="loginButton" class="btn" value="submit" onclick="return validateForm()">Save Changes</button>
+                        <button type="reset" id="clear" class="btn" value="clear" onclick="alert('Are you sure?')">Clear</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <center>
+            <hr>
+        </center>
+        <div class="footer" id="footer">
+            <div>
+                <img src="https://krs.kiit.ac.in/assets/KRS.b5e08628.png" alt="logo">
+            </div>
+            <div class="contact-links">
+                <div>
+                    <h2>SiteMap</h2>
+                    <h3><a class="contact-link" href="index.html">Home</a></h3>
+                    <h3><a class="contact-link" href="index.html#about">About Us</a></h3>
+                    <h3><a class="contact-link" href="index.html#footer">Contact Us</a></h3>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <h3>Instagram</h3>
+                    <h3>Facebook</h3>
+                    <h3>Youtube</h3>
+                    <h3>Email</h3>
+                </div>
+            </div>
+        </div>
+        <script src="form.js"></script>
+    </body>
+
+</html>
