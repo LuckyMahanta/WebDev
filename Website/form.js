@@ -2,12 +2,6 @@ function printError(eleId, hintMsg) {
     document.getElementById(eleId).innerHTML = hintMsg;
 }
 
-// var submit=document.getElementById("RegisterButton")
-//     console.log(submit)
-// submit.onclick=function(){
-//     validateForm();
-// }
-
 function validateForm() {
     console.log("Submit");
     var form = document.getElementById("myform")
