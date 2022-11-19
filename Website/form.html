@@ -52,15 +52,15 @@
 
                     <div class="user">
                         <label><b>Gender:</b></label>
-                        <input class="input" type="radio" name="gender" value="male" required> Male
-                        <input class="input" type="radio" name="gender" value="female" required> Female
+                        <input class="input" type="radio" name="gender" value="Male" required> Male
+                        <input class="input" type="radio" name="gender" value="Female" required> Female
                         <div class="error" style="color: red" id="genderErr"></div>
                     </div>
 
                     <div class="user">
                         <label><b>Qualification:</b></label>
-                        <input class="input" type="radio" name="qualification" value="student" required> Student
-                        <input class="input" type="radio" name="qualification" value="teacher" required> Teacher
+                        <input class="input" type="radio" name="qualification" value="Student" required> Student
+                        <input class="input" type="radio" name="qualification" value="Teacher" required> Teacher
                         <div class="error" style="color: red" id="qualificationErr"></div>
                     </div>
 
@@ -89,19 +89,21 @@
                     <div class="conditions">
                         <b>Conditions:</b>
                         <br>
-                        <ol> 
+                        <ol>
                             <li>
                                 Each user shall only register once.
                             </li>
                             <li>
-                                It is the User's responsibility to make sure that he/she has sufficient access to Internet to participate to the activites at the desired extend.
+                                It is the User's responsibility to make sure that he/she has sufficient access to
+                                Internet to participate to the activites at the desired extend.
                             </li>
                         </ol>
                         <div class="error" style="color: red" id="conditionsErr"></div>
                     </div>
 
                     <div class="checkbox">
-                        <input class="input" type="checkbox" name="checkbox_conditions" value="accepted form" required> I have read and agreed to all conditions
+                        <input class="input" type="checkbox" name="checkbox_conditions" value="accepted form" required>
+                        I have read and agreed to all conditions
                     </div>
 
                     <div class="comment">
@@ -110,8 +112,10 @@
                     </div>
 
                     <div>
-                        <button type="submit" id="loginButton" class="btn" value="submit" onclick="return validateForm()">Save Changes</button>
-                        <button type="reset" id="clear" class="btn" value="clear" onclick="alert('Are you sure?')">Clear</button>
+                        <button type="button" id="loginButton" class="btn" value="submit"
+                            onclick="validateForm()">Save Changes</button>
+                        <button type="reset" id="clear" class="btn" value="clear"
+                            onclick="alert('Are you sure?')">Clear</button>
                     </div>
                 </form>
             </div>
