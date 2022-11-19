@@ -2,11 +2,11 @@ function printError(eleId, hintMsg) {
     document.getElementById(eleId).innerHTML = hintMsg;
 }
 
-var submit=document.getElementById("RegisterButton")
-    console.log(submit)
-submit.onclick=function(){
-    validateForm();
-}
+// var submit=document.getElementById("RegisterButton")
+//     console.log(submit)
+// submit.onclick=function(){
+//     validateForm();
+// }
 
 function validateForm() {
     console.log("Submit");
@@ -102,7 +102,7 @@ function validateForm() {
             name +
             "\n" +
             "Mobile Number: " +
-            mobile +
+            number +
             "\n" +
             "Email Address: " +
             email +
@@ -112,10 +112,10 @@ function validateForm() {
             "\n" +
             "Gender: " +
             gender +
-            "\n";
+            "\n"+
             "Qualification:" +
             qualification +
-            "\n";
+            "\n"+
             "Course:" +
             course +
             "\n";
